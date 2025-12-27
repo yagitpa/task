@@ -66,6 +66,10 @@ public class BookFormatter {
 
             String[] nameParts = fullName.trim().split("\\s+");
 
+            /**
+             * Позволяет при необходимости изменить порядок вывода с ИОФ на ФИО или любой другой
+             * при смене вводных данных ТЗ
+             */
             return switch (nameParts.length) {
                 case 1 -> nameParts[0];
                 case 2 -> nameParts[0] + " " + nameParts[1];
